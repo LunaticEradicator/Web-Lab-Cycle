@@ -1,0 +1,31 @@
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(20, 146, 104);
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(41, 40, 40, 0.795),
+      rgba(31, 30, 30, 0.863)
+    ),
+    url(./2.jpg);
+  background-size: cover;
+}
+table {
+  display: inline-block;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+table,
+th,
+td {
+  padding: 10px;
+  border: 1px solid black;
+}

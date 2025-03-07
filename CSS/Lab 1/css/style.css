@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(46, 45, 45, 0);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795),
+      rgba(0, 0, 0, 0.863)
+    ),
+    url(./2.jpg);
+}
+ul {
+  display: inline-block;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 12%;
+}
+table {
+  /* border: 2px solid rgb(241, 238, 238); */
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 50vw;
+  height: 30vh;
+  border-radius: 3px;
+}
+table caption {
+  padding: 10px;
+  color: rgb(245, 244, 244);
+  font-size: 5rem;
+  cursor: alias;
+}
+
+tr {
+  font-weight: bold;
+}
+
+/* thead {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+} */
+tbody > tr {
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+}
+tbody > tr:nth-of-type(even) {
+  cursor: pointer;
+  /* background-color: rgb(240, 241, 243); */
+  background-color: rgba(199, 196, 190, 0.973);
+}
+tbody > tr:nth-of-type(even):hover {
+  background-color: rgba(214, 214, 204, 0.664);
+  color: brown;
+}
+
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  padding: 8px 10px;
+}
+
+.table {
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.main_btn {
+  border-radius: 10px;
+  transition: all 0.7s;
+}
+.main_btn:hover {
+  transform: scale(1.07);
+  box-shadow: rgb(253, 228, 195) 0px 0px 5px 0px,
+    rgb(253, 228, 195) 0px 0px 1px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 50px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+}
+
+.main_btn_link {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}

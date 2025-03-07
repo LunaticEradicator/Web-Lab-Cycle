@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Iansui&family=Josefin+Sans&display=swap");
+
+html {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Iansui", cursive;
+}
+html,
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+
+body {
+  margin: 0;
+  padding: 20px;
+  box-shadow: rgb(240, 239, 239) 0px 5px 15px;
+  background-color: white;
+}
+
+form {
+  box-shadow: rgb(15, 15, 15) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+::placeholder {
+  color: rgb(255, 235, 209);
+  opacity: 1; /* Firefox */
+}
+
+input:focus {
+  border: 1px solid red;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: red;
+}
+
+form > :last-child {
+  padding-top: 10px;
+}
+h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  text-align: center;
+  color: rgb(109, 206, 177);
+  /* color: rgb(45, 175, 136); */
+  text-decoration: underline;
+}
+h2 {
+  color: rgb(109, 206, 177);
+  text-align: center;
+  text-decoration: underline;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  /* box-shadow: rgb(250, 235, 215) 0px 2px 4px 0px inset; */
+  box-shadow: antiquewhite 0px 2px 4px 0px inset;
+  border: none;
+  outline: none;
+  background-color: rgb(77, 76, 76);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background-color: rgb(103, 107, 104);
+  padding: 8px;
+  font-weight: 600;
+  /* color: rgb(23, 233, 170); */
+  color: rgb(198 255 238);
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid black; */
+  font-size: 1.3rem;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Iansui", cursive;
+  box-shadow: rgba(247, 217, 179, 0.952) 0px 1px 6px 1px inset;
+
+  /* box-shadow: rgba(247, 217, 179, 0.952) 0px 2px 4px 0px inset; */
+}
+input[type="file"] > button {
+  font-weight: bold;
+  font-family: cursive;
+  padding: 5px 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(248, 248, 247);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+input[type="date"] {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 3px;
+  font-family: cursive;
+  border: none;
+  border: 1px solid black;
+}
+
+option {
+  background-color: black;
+  font-weight: bold;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="date"] {
+  cursor: pointer;
+}
+
+button {
+  padding: 5px 10px;
+  color: rgb(255, 235, 209);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* background-color: rgb(218, 213, 208); */
+  background-color: rgb(103, 107, 104);
+  /* font-family: cursive; */
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Iansui", cursive;
+  box-shadow: rgba(250, 235, 215, 0.404) 0px 2px 4px 0px inset;
+  transition: all 0.5s;
+}
+
+button:hover {
+  scale: 0.98;
+  background-color: black;
+  color: rgb(45, 175, 136);
+  box-shadow: rgb(45, 175, 136) 0px 7px 10px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::file-selector-button {
+  background-color: black;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+/* error */
+
+.error-message {
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+  font-size: 0.7rem;
+  text-align: left;
+  width: 30em;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+input:focus {
+  background-color: rgb(255, 255, 255);
+  outline: 2px solid rgb(29, 100, 231);
+  box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.164);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  outline: 2px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  visibility: visible;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  outline: 2px solid rgb(23, 233, 170);
+}
+
+.main {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.comment {
+  display: flex;
+}
+
+.commentForm1 {
+  display: flex;
+  flex-direction: column;
+}
+.submitBtn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 >Registration Form</h1>
+    <form>
+      <div>
+        <label>Enter Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required />
+      </div>
+      <div>
+        <label>Enter Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div>
+        <label>Enter Phone:</label>
+        <input
+          type="number"
+          name="phone"
+          placeholder="Enter your phone"
+          maxlength="10"
+          required
+        />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <div>
+        <label>Select Qualification:</label>
+        <select name="qualification" required>
+          <option disabled selected="selected"> Choose Option </option>
+          <option value="SSLC">SSLC</option>
+          <option value="High School">High School</option>
+          <option value="UG">UG</option>
+          <option value="PG">PG</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Select Gender:</label required>
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Others" /> Others
+      </div>
+
+      <div style="display: inline-flex;" >
+        <label>Message:</label>
+        <textarea  rows="3"  name="message" id="">Enter Message...</textarea>
+      </div>
+
+      <div>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required />
+      </div>
+
+      <div>
+        <label>Upload a Resume:</label>
+        <input  type="file" name="resume" accept=".pdf,.doc,.docx" />
+      </div>
+
+      <div>
+        <label>Choose Your Favorite Color:</label>
+        <input type="color" name="color" value="#ff0000" required/>
+      </div>
+
+      <div>
+        <label for="subscribe"> Subscribe to newsletter</label>
+        <input type="checkbox" name="subscribe" required />
+      </div>
+
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
