@@ -5,16 +5,15 @@ a {
 }
 h1 {
   font-size: 3rem;
-  color: white;
 }
 body {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right,
       rgba(41, 40, 40, 0.795),
       rgba(31, 30, 30, 0.863)
     ),
     url(./2.jpg);
-  background-size: cover;
+  background-size: cover; */
 }
 table {
   display: inline-block;
@@ -28,4 +27,9 @@ th,
 td {
   padding: 10px;
   border: 1px solid black;
+}
+
+img {
+  width: 500px;
+  height: 500px;
 }

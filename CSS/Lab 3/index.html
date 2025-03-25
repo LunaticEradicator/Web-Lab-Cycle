@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div>
+    <div class="main">
       <h1>Blog</h1>
       <div class="form">
-        <form action="/submit-comment" method="POST">
+        <form action="#" method="POST">
           <h2>Enter Details</h2>
           <div class="comment">
             <div class="commentForm1">
@@ -20,6 +20,7 @@
                   name="name"
                   placeholder="Enter your name"
                   required
+                  autocomplete="off"
                 />
                 <p class="error-message">Enter Your Name</p>
               </div>
@@ -30,6 +31,7 @@
                   placeholder="Enter Your Email"
                   required
                   pattern="^([a-z0-9][._]?)+[a-z0-9]@[a-z0-9]+(\.?[a-z0-9]){2}\.(com?|net|org)+(\.[a-z0-9]{2,4})?"
+                  autocomplete="off"
                 />
                 <p class="error-message">
                   Email must be a valid address, e.g me@mydomain.com
@@ -41,6 +43,7 @@
                   name="password"
                   required
                   placeholder="Enter your password"
+                  autocomplete="off"
                 />
                 <p class="error-message">Please enter a valid password</p>
               </div>
@@ -53,6 +56,7 @@
                   name="message"
                   placeholder="Enter Comments..."
                   required
+                  autocomplete="off"
                 ></textarea>
               </div>
             </div>

@@ -21,6 +21,8 @@ body {
 }
 h1 {
   margin-top: 0;
+  text-align: center;
+  color: aliceblue;
 }
 form {
   max-width: 400px;
@@ -30,10 +32,6 @@ form {
   border-radius: 5px;
   font-size: 1.1rem;
   background-color: whitesmoke;
-}
-h1 {
-  text-align: center;
-  color: aliceblue;
 }
 
 input[type="text"],
@@ -70,6 +68,11 @@ input[type="date"] {
   font-family: cursive;
   border: none;
   border: 1px solid black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: brown;
 }
 
 option {
@@ -116,6 +119,12 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+textarea {
+  font-weight: bold;
+  font-family: cursive;
+  color: brown;
 }
 
 input::file-selector-button {

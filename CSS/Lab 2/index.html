@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <h1 >Registration Form</h1>
+    <h1>Registration Form</h1>
     <form>
       <div>
         <label>Enter Name:</label>
-        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+          autocomplete="off"
+        />
       </div>
       <div>
         <label>Enter Email:</label>
@@ -20,6 +27,7 @@
           name="email"
           placeholder="Enter your email"
           required
+          autocomplete="off"
         />
       </div>
       <div>
@@ -30,6 +38,7 @@
           placeholder="Enter your phone"
           maxlength="10"
           required
+          autocomplete="off"
         />
       </div>
       <div>
@@ -39,12 +48,13 @@
           name="password"
           placeholder="Enter your password"
           required
+          autocomplete="off"
         />
       </div>
       <div>
         <label>Select Qualification:</label>
         <select name="qualification" required>
-          <option disabled selected="selected"> Choose Option </option>
+          <option disabled selected="selected">Choose Option</option>
           <option value="SSLC">SSLC</option>
           <option value="High School">High School</option>
           <option value="UG">UG</option>
@@ -53,15 +63,20 @@
       </div>
 
       <div>
-        <label>Select Gender:</label required>
+        <label>Select Gender:</label>
         <input type="radio" name="gender" value="Male" /> Male
         <input type="radio" name="gender" value="Female" /> Female
         <input type="radio" name="gender" value="Others" /> Others
       </div>
 
-      <div style="display: inline-flex;" >
+      <div style="display: inline-flex">
         <label>Message:</label>
-        <textarea  rows="3"  name="message" id="">Enter Message...</textarea>
+        <textarea
+          rows="3"
+          name="message"
+          id=""
+          placeholder="Enter Message..."
+        ></textarea>
       </div>
 
       <div>
@@ -71,12 +86,12 @@
 
       <div>
         <label>Upload a Resume:</label>
-        <input  type="file" name="resume" accept=".pdf,.doc,.docx" />
+        <input type="file" name="resume" accept=".pdf,.doc,.docx" />
       </div>
 
       <div>
         <label>Choose Your Favorite Color:</label>
-        <input type="color" name="color" value="#ff0000" required/>
+        <input type="color" name="color" value="#ff0000" required />
       </div>
 
       <div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Validation: JS1</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="imageSection">
+        <img class="backGround" src="./Image/bg3.jpg" alt="Background Image" />
+        <div class="logoArrange">
+          <img class="logo" src="./Image/logo.png" alt="Logo" />
+          <span class="logoText">Ents Hospital</span>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="mainTopSection">
+          <div class="mainTopTextOne">
+            <q
+              >He who has health has hope; and he who has hope, has
+              everything</q
+            ><br />
+            <span class="author">- Thomas Carlyle</span>
+          </div>
+          <div class="mainTopTextTwo">
+            <span>
+              We welcome you to the world of Ents where your problems are ours.
+              We are the leading medical group in cure and research.
+            </span>
+          </div>
+        </div>
+
+        <div class="userValidationSection">
+          <div class="formControl">
+            <div class="fillText">
+              <span>Fill the User Details</span>
+            </div>
+
+            <div class="formClass">
+              <form
+                action="https://lunaticeradicator.github.io/Medical-Landing-Page/"
+                class="formed"
+              >
+                <div class="formOne">
+                  <div>
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder=" "
+                      autocomplete="off"
+                    />
+                    <p class="error-message">Enter Your First Name</p>
+                  </div>
+
+                  <div>
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="lastName"
+                      placeholder=" "
+                      autocomplete="off"
+                    />
+                    <p class="error-message">Enter Your Last Name</p>
+                  </div>
+                </div>
+
+                <div class="formTwo">
+                  <div>
+                    <label for="emailId">Email</label>
+                    <input
+                      type="email"
+                      name="emailId"
+                      id="emailId"
+                      placeholder=" "
+                      autocomplete="off"
+                      pattern="^([a-z0-9][._]?)+[a-z0-9]@[a-z0-9]+(\.?[a-z0-9]){2}\.(com?|net|org)+(\.[a-z0-9]{2,4})?"
+                    />
+                    <p class="error-message">
+                      Email must be a valid address, e.g me@mydomain.com
+                    </p>
+                  </div>
+
+                  <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input
+                      type="tel"
+                      name="phoneNumber"
+                      id="phoneNumber"
+                      placeholder=" "
+                      maxlength="10"
+                      pattern="^([\d]{10})$"
+                      autocomplete="off"
+                    />
+                    <p class="error-message">Enter 10 digit phone number</p>
+                    <!-- value="+91 " -->
+                    <!-- inputmode="numeric" -->
+                  </div>
+                </div>
+
+                <div class="formThree">
+                  <div>
+                    <label id="noIdea" for="newPassword">Password</label>
+                    <input
+                      type="password"
+                      name="newPassword"
+                      id="newPassword"
+                      placeholder=" "
+                      pattern="^([\w@-_\.]{8,20})$"
+                      autocomplete="off"
+                      maxlength="20"
+                    />
+                    <p class="error-message">
+                      Password must be alphanumeric, (@ , _ , - , . are also
+                      allowed) and must be 8-20 characters
+                    </p>
+                  </div>
+
+                  <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      id="confirmPassword"
+                      placeholder=" "
+                      pattern="^([\w@-_\.]{8,20})$"
+                      maxlength="20"
+                      autocomplete="off"
+                    />
+                    <p class="error-message">Password does not match</p>
+                  </div>
+                </div>
+
+                <div class="mainBottom">
+                  <div class="submitBtnDiv">
+                    <input type="submit" class="submitBtn" value="Submit" />
+                  </div>
+                  <div>
+                    <span>Already Have An Account?</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
